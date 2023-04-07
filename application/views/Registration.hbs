@@ -1,0 +1,48 @@
+﻿    <header>
+        <h1>Account Registration</h1>
+    </header>
+    
+    <form  method="POST" action="/users/Registration" enctype="application/x-www-form-urlencoded">
+        <div class="grid-by-2-R">
+            <label class="txt-user" for ="user"> Username</label>
+            <input id ="user" class="in-user" type="text" placeholder="Username" name="username"/>
+
+            <label class="txt-mail"> Email</label>
+            <input id ="email" class="in-mail" type="email" placeholder="Email" name="email"/>
+
+            <label class="txt-pass">Password</label>
+            <input id ="pass" class="in-pass" type="password" placeholder="Password" name="password"/>
+
+            <label class="txt-comfirm"> Comfirm Password</label>
+            <input id ="confirm" class="in-confirm" type="password" placeholder="Comfirm Password" name="cpassword"/>
+
+            <input class="box-age" type="checkbox">
+            <label class="age-text"> By checking this box, you are confirming you are 13+ years of age.</label>
+
+            <input class="box-rules" type="checkbox"/>
+            <label class="rules-text"> By checking this box, you are comfirming you have read and accept the TOS and Privacy Rules.</label>
+
+            <a class="txt-link" href="TOS Link"> TOS and Privacy Rules</a>
+
+            <button class="R-create" type="submit"> Register Account </button>
+
+            <button class="R-cancel" type="submit"> Cancel </button>
+        </div>
+
+        <div id="user-message", class = "message">
+        <h3>Username Requirements:</h3>
+        <p id="1stletter" class="invalid"> Must start with letter.</p>
+        <p id="user-length"  class="invalid"> Must be at least 3 letters/numbers.</p>
+        </div>
+
+        <div id="pass-message", class = "message">
+            <h3>Password Requirements:</h3>
+            <p id="pass-length"  class="invalid"> Must be at least 8 characters.</p>
+            <p id="pass-upper" class="invalid"> Must contain an upper case letter.</p>
+            <p id="pass-num" class="invalid"> Must contain a number.</p>
+            <p id="pass-special" class="invalid"> Must contain a special character (/*-+!@#$^&).</p>
+            </div>
+        <div id="confirm-message", class = "message">
+            <p id="confirm-pass"  class="invalid"> Passwords must being matching.</p>
+        </div>
+        </form>

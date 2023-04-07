@@ -1,0 +1,14 @@
+<div class="topnav">
+    <a class = "left" href="/">Home</a>
+    <a class = "left" href="/Post">Post</a>
+    {{#if logged}}
+    <a class = "left" id = "logout-button" href="/users/Logout">Logout</a>
+    {{else}}
+    <a class = "left" href="/Login">Login</a>
+    <a class = "left" href="/Registration">Sign-Up</a>
+    {{/if}}
+    <div class = "search-bar" class = "right">
+    <input id="search-text" class ="search" type="text" placeholder="Search for images...">
+    <button id="search-b" class = "search-button">Search</button>
+    </div>
+</div>

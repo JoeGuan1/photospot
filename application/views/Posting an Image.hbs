@@ -1,0 +1,19 @@
+﻿    <header>Creating Image Post</header>
+    <form method="POST" enctype="multipart/form-data" action="/posts/createPost">
+    <div class="grid-by-2-P">
+        <label class="txt-title">Post Title</label>
+        <input class="in-title" type="text" name="title" />
+
+        <label class="txt-desc">Post Description</label>
+        <input class="in-desc" type="text" name="description" />
+
+        <label class="txt-file">Image File </br> (Jpg or PNG files only)</label>
+        <input class="in-file" type="file" name="uploadImage"/>
+
+        <input class="box-accept" type="checkbox"/>
+        <label class="accept-text">By checking this box, you are agreeing to the Acceptable Use Policy.</label>
+
+        <button class="P-post" type="submit"> Post Image </button>
+        <button class="P-cancel" type="submit"> Cancel </button>
+    </div>
+    </form>

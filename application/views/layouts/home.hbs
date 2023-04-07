@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/Nav.css ">  
+    <link rel="stylesheet" type="text/css" href="/public/css/HomeStyle.css ">
+    <link rel="stylesheet" type="text/css" href="/public/css/LoginStyle.css ">
+    <link rel="stylesheet" type="text/css" href="/public/css/ImageStyle.css ">
+    <link rel="stylesheet" type="text/css" href="/public/css/PostStyle.css ">
+    <link rel="stylesheet" type="text/css" href="/public/css/Comments.css ">
+    <link rel="stylesheet" type="text/css" href="/public/css/RegStyle.css ">
+    {{!-- <script type="text/javascript" defer src="/public/js/Home Page.js"></script> --}}
+    <script type="text/javascript" defer src="/public/js/frontend.js"></script>
+    <script type="text/javascript" defer src="/public/js/Valid Form.js"></script>
+    <script type="text/javascript" defer src="/public/js/Comments Section.js"></script>
+</head>
+
+<body>
+    {{#if (emptyObject messages)}}
+    {{>flashmessage}}
+    {{/if}}
+    {{> Nav}}
+    {{{body}}}
+    {{>Footer}}
+    </div>
+    {{#if logged}}
+        <script>
+            let ele = document.getElementById('logout-button');
+            if(ele) {
+                ele.onclick = (even) => {
+                    fetch('/users/Logout', {
+                        method: "POST"
+                    })
+                    .then((data) => {
+                        location.replace('/');
+                    })
+                }
+            }
+        </script>
+    {{/if}}
+    </form>
+</body>
+</html>

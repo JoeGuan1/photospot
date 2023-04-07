@@ -1,0 +1,22 @@
+users
+	id
+
+	usename
+	email
+	password
+
+	usertype
+	active
+	created
+
+posts
+	id
+
+	title
+	description
+	photopath
+	thumbnail
+
+	active
+	created
+	userid

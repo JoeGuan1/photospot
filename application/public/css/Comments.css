@@ -1,0 +1,74 @@
+
+.container{
+    border: 2px solid #333;
+    padding: 15px 10px;
+    background-color: #f7d470;
+    margin: auto;
+    width: 300px;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 15px
+}
+
+.comment-section{
+    display: block;
+    margin: auto;
+    border: 2px black;
+    padding: 10px;
+    box-shadow: 5px 5px;
+    border-style: ridge;
+    background-color: #f7d470;
+    text-align: center;
+    width: 400px;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+textarea{
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition: .5s
+}
+
+input[type="submit"], button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"] {
+    color: #fff;
+    background-color: #273c75
+}
+button {
+    color: #333;
+}
+.btn {
+    display: none
+}
+
+.comment-message {
+    float:left
+}
+
+.author-text {
+    font-weight: bold;
+}
+
+.date-posted {
+    font-weight: bold;
+}
+
+.comment-text {
+    margin-left: 15px
+}

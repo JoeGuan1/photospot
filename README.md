@@ -20,7 +20,8 @@ Please follow the instructions below and fill in the information requested when 
 # Build/Run Instructions
 
 ## Build Instructions
-1. npm i
+1. Install Node JS
+2. npm i
 
 ## Run Instructions
 1. npm start
